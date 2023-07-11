@@ -25,6 +25,6 @@ JavaScript Concepts Used:
 - CSS manipulation: JavaScript adds or removes CSS classes to trigger flexbox transitions and animations.
 - Conditional statements: Conditional statements are used to check the current state of a panel and determine the appropriate action to take (expand or collapse).
 
-  ![Image](https://github.com/akshaysadalgekar03/Drum-Kit-HTML-CSS-JavaScript/raw/main/Screen%20Shot%202023-06-23%20at%207.13.34%20PM.png)
+  ![Image](Flex-panel.png)
 
 The flex panel display project demonstrates how JavaScript can be used to create interactive and dynamic web experiences. By combining JavaScript with flexbox, the project provides an intuitive and visually appealing way to reveal hidden content in a smooth and engaging manner.
