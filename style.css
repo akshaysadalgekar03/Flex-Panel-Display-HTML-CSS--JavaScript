@@ -1,0 +1,107 @@
+html{
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.panels {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  .panel {
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 .2em rgba(255, 255, 255, 0.1);
+    color: white;
+    font-weight: 400;
+    text-shadow: .1em .1em .1em black;
+    transition: font-size 0.3s ease-in-out 0.05s, flex 0.3s ease-out -0.05s, background 0.1s ease;  }
+  
+  .panel:nth-child(1) {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.25)), url(images/chi-1.jpg);
+  }
+  
+  .panel:nth-child(2) {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.25)), url(images/chi-2.jpg);
+  }
+  
+  .panel:nth-child(3) {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.25)), url(images/chi-3.jpg);
+  }
+  
+
+  .panel:nth-child(4) {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.25)), url(images/chi-4.jpg);
+  }
+  
+  /* Flex Items */
+  .panel > p {
+    align-items: center;
+    display: flex;
+    flex: 1 0 auto;
+    font-family: 'daniel', sans-serif;
+    height: 1vh;
+    justify-content: center;
+    margin: 0;
+    transition: transform 0.5s;
+    width: 100%;
+  }
+  
+/* 
+  First <p> element inside each '.panel'
+  which translates the element vertically upward by 100% of its own height. 
+  This effectively moves the first paragraph out of view above the panel.
+*/
+  .pop-sentence-top {
+    transform: translateY(-100%);
+  }
+  /* 
+  First <p> element inside each '.panel'
+  which translates the element vertically downward by 100% of its own height. 
+  This effectively moves the first paragraph out of view above the panel.
+*/
+
+  .pop-sentence-bottom {
+    transform: translateY(100%);
+  }
+/*
+ First <p> element inside a .panel element when the panel has the class .open
+ Brings the first paragraph back to its original position, effectively showing it again
+ */
+.open-show p{
+    transform: translateY(0);
+  }
+
+/* 
+ Second <p> element inside each .panel
+ */
+.main-sentence {
+    font-size: 3.6rem;
+    font-weight: 900;
+    text-transform: none;
+  }
+/* 
+ 
+/* 
+Targets the .panel element that has the class .open. */
+.panel.open {
+    flex: 3;
+    font-size: 2rem;
+  }
+  
